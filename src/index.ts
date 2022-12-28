@@ -37,7 +37,7 @@ export default async function (args: yargs.Arguments) {
     lock.writeLock()
 
     log.prepareInstall(
-        Object.keys(info.topLevel).length + info.unsatisifed.length
+        Object.keys(info.topLevel).length + info.unsatisfied.length
     )
 
     await Promise.all(
